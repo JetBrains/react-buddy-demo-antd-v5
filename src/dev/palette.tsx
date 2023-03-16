@@ -807,7 +807,6 @@ import {
   Carousel,
   Cascader,
   Collapse,
-  Comment,
   DatePicker,
   Descriptions,
   Divider,
@@ -816,7 +815,6 @@ import {
   Input,
   InputNumber,
   Menu,
-  PageHeader,
   Pagination,
   Rate,
   Row,
@@ -853,6 +851,8 @@ import Meta from "antd/es/card/Meta";
 import TextArea from "antd/es/input/TextArea";
 import Paragraph from "antd/es/typography/Paragraph";
 import { useForm } from "antd/es/form/Form";
+
+// Anchor, Mentions, Transfer, TreeSelect, Upload, QRCode, Message, ConfigProvider, FloatButton, Watermark, Notification, Segmented, Tour
 
 export default () => (
   <Palette>
@@ -1726,92 +1726,6 @@ export default () => (
               <p>Panel content 3</p>
             </Collapse.Panel>
           </Collapse>
-        </Variant>
-      </Component>
-      <Component name="Comment" docURL="https://ant.design/components/comment/">
-        <Variant name="basic">
-          <Comment
-            actions={[<span key="comment-nested-reply-to">Reply to</span>]}
-            author={<a>Han Solo</a>}
-            avatar={
-              <Avatar
-                src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-                alt="Han Solo"
-              />
-            }
-            content={
-              <p>
-                We supply a series of design principles, practical patterns and
-                high quality design resources (Sketch and Axure).
-              </p>
-            }
-          ></Comment>
-        </Variant>
-        <Variant name="usage with list">
-          <List
-            header="2 replies"
-            itemLayout="horizontal"
-            dataSource={[
-              {
-                actions: [<span key="comment-list-reply-to-0">Reply to</span>],
-                author: "Han Solo",
-                avatar: "https://joeschmoe.io/api/v1/random",
-                content: (
-                  <p>
-                    We supply a series of design principles, practical patterns
-                    and high quality design resources (Sketch and Axure), to
-                    help people create their product prototypes beautifully and
-                    efficiently.
-                  </p>
-                ),
-                datetime: <span>2022-01-01</span>,
-              },
-              {
-                actions: [<span key="comment-list-reply-to-0">Reply to</span>],
-                author: "Han Solo",
-                avatar: "https://joeschmoe.io/api/v1/random",
-                content: (
-                  <p>
-                    We supply a series of design principles, practical patterns
-                    and high quality design resources (Sketch and Axure), to
-                    help people create their product prototypes beautifully and
-                    efficiently.
-                  </p>
-                ),
-                datetime: <span>2022-01-01</span>,
-              },
-            ]}
-            renderItem={(item) => (
-              <li>
-                <Comment
-                  actions={item.actions}
-                  author={item.author}
-                  avatar={item.avatar}
-                  content={item.content}
-                  datetime={item.datetime}
-                />
-              </li>
-            )}
-          />
-        </Variant>
-        <Variant name="reply editor">
-          <Comment
-            avatar={
-              <Avatar src="https://joeschmoe.io/api/v1/random" alt="Han Solo" />
-            }
-            content={
-              <>
-                <Form.Item>
-                  <TextArea rows={4} />
-                </Form.Item>
-                <Form.Item>
-                  <Button htmlType="submit" type="primary">
-                    Add Comment
-                  </Button>
-                </Form.Item>
-              </>
-            }
-          />
         </Variant>
       </Component>
       <Component
@@ -3162,54 +3076,6 @@ export default () => (
         </Variant>
       </Component>
       <Component
-        name="PageHeader"
-        docURL="https://ant.design/components/page-header/"
-      >
-        <Variant name="basic">
-          <PageHeader
-            onBack={() => null}
-            title="Title"
-            subTitle="This is a subtitle"
-          />
-        </Variant>
-        <Variant name="extra">
-          <PageHeader
-            onBack={() => null}
-            title="Title"
-            subTitle="This is a subtitle"
-            extra={[
-              <Button key="3">Operation</Button>,
-              <Button key="2">Operation</Button>,
-              <Button key="1" type="primary">
-                Primary
-              </Button>,
-            ]}
-          />
-        </Variant>
-        <Variant name="with breadcrumbs">
-          <PageHeader
-            title="Title"
-            breadcrumb={{
-              routes: [
-                {
-                  path: "index",
-                  breadcrumbName: "First-level Menu",
-                },
-                {
-                  path: "first",
-                  breadcrumbName: "Second-level Menu",
-                },
-                {
-                  path: "second",
-                  breadcrumbName: "Third-level Menu",
-                },
-              ],
-            }}
-            subTitle="This is a subtitle"
-          />
-        </Variant>
-      </Component>
-      <Component
         name="Pagination"
         docURL="https://ant.design/components/pagination/"
       >
@@ -3428,35 +3294,35 @@ export default () => (
       </Component>
       <Component name="Drawer" docURL="https://ant.design/components/drawer/">
         <Variant name="placement right">
-          <Drawer title="Basic Drawer" visible>
+          <Drawer title="Basic Drawer" open>
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
           </Drawer>
         </Variant>
         <Variant name="placement top">
-          <Drawer title="Basic Drawer" visible placement="top">
+          <Drawer title="Basic Drawer" open placement="top">
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
           </Drawer>
         </Variant>
         <Variant name="placement left">
-          <Drawer title="Basic Drawer" visible placement="left">
+          <Drawer title="Basic Drawer" open placement="left">
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
           </Drawer>
         </Variant>
         <Variant name="placement bottom">
-          <Drawer title="Basic Drawer" visible placement="bottom">
+          <Drawer title="Basic Drawer" open placement="bottom">
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
           </Drawer>
         </Variant>
         <Variant name="large">
-          <Drawer title="Basic Drawer" visible size="large">
+          <Drawer title="Basic Drawer" open size="large">
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
@@ -3465,7 +3331,7 @@ export default () => (
       </Component>
       <Component name="Modal" docURL="https://ant.design/components/modal/">
         <Variant name="basic">
-          <Modal title="Basic Modal" visible={true}>
+          <Modal title="Basic Modal" open>
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
@@ -3474,7 +3340,7 @@ export default () => (
         <Variant name="custom footer">
           <Modal
             title="Basic Modal"
-            visible={true}
+            open
             footer={[
               <Button key="back">Return</Button>,
               <Button key="submit" type="primary">
@@ -3491,7 +3357,7 @@ export default () => (
           </Modal>
         </Variant>
         <Variant name="width">
-          <Modal title="Basic Modal" visible={true} width={1000}>
+          <Modal title="Basic Modal" open width={1000}>
             <p>Some contents...</p>
             <p>Some contents...</p>
             <p>Some contents...</p>
@@ -3500,7 +3366,7 @@ export default () => (
         <Variant name="ok and cancel text">
           <Modal
             title="Basic Modal"
-            visible={true}
+            open
             okText="Confirm"
             cancelText="Cancel"
           >
@@ -3510,14 +3376,14 @@ export default () => (
           </Modal>
         </Variant>
         <Variant name="vertically centred">
-          <Modal title="Vertically centered modal dialog" centered visible>
+          <Modal title="Vertically centered modal dialog" centered open>
             <p>some contents...</p>
             <p>some contents...</p>
             <p>some contents...</p>
           </Modal>
         </Variant>
         <Variant name="top offset">
-          <Modal title="20px to Top" style={{ top: 20 }} visible>
+          <Modal title="20px to Top" style={{ top: 20 }} open>
             <p>some contents...</p>
             <p>some contents...</p>
             <p>some contents...</p>
@@ -3526,7 +3392,7 @@ export default () => (
         <Variant name="custom button props">
           <Modal
             title="Basic Modal"
-            visible
+            open
             okButtonProps={{ disabled: true }}
             cancelButtonProps={{ disabled: true }}
           >
