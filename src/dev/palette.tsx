@@ -1382,6 +1382,7 @@ export default () => (
           <Mentions
             placeholder="this is disabled Mentions"
             disabled
+            defaultValue="afc163"
             options={[
               {
                 value: 'afc163',
@@ -1398,10 +1399,11 @@ export default () => (
             ]}
           />
         </Variant>
-        <Variant name="disabled">
+        <Variant name="readOnly">
           <Mentions
             placeholder="this is readOnly Mentions"
             readOnly
+            defaultValue="afc163"
             options={[
               {
                 value: 'afc163',
@@ -4296,7 +4298,7 @@ export default () => (
         </Variant>
       </Component>
     </Category>
-    <Category name="Icons">
+    <Category name="Icon">
       <Component
         name="StepBackwardOutlined"
         docURL="https://ant.design/components/icon"
