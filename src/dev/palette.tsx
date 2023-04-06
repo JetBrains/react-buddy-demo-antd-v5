@@ -1313,19 +1313,19 @@ export default () => (
         <Variant>
           <Mentions
             style={{ width: "100%" }}
-            defaultValue="@afc163"
+            defaultValue="@user1"
             options={[
               {
-                value: "afc163",
-                label: "afc163",
+                value: "user1",
+                label: "user1",
               },
               {
-                value: "zombieJ",
-                label: "zombieJ",
+                value: "user2",
+                label: "user2",
               },
               {
-                value: "yesmeck",
-                label: "yesmeck",
+                value: "user3",
+                label: "user3",
               },
             ]}
           />
@@ -1349,16 +1349,16 @@ export default () => (
             <Mentions
               options={[
                 {
-                  value: "afc163",
-                  label: "afc163",
+                  value: "user1",
+                  label: "user1",
                 },
                 {
-                  value: "zombieJ",
-                  label: "zombieJ",
+                  value: "user2",
+                  label: "user2",
                 },
                 {
-                  value: "yesmeck",
-                  label: "yesmeck",
+                  value: "user3",
+                  label: "user3",
                 },
               ]}
             />
@@ -1369,16 +1369,16 @@ export default () => (
             placement="top"
             options={[
               {
-                value: "afc163",
-                label: "afc163",
+                value: "user1",
+                label: "user1",
               },
               {
-                value: "zombieJ",
-                label: "zombieJ",
+                value: "user2",
+                label: "user2",
               },
               {
-                value: "yesmeck",
-                label: "yesmeck",
+                value: "user3",
+                label: "user3",
               },
             ]}
           />
@@ -1387,19 +1387,19 @@ export default () => (
           <Mentions
             placeholder="this is disabled Mentions"
             disabled
-            defaultValue="afc163"
+            defaultValue="@user1"
             options={[
               {
-                value: "afc163",
-                label: "afc163",
+                value: "user1",
+                label: "user1",
               },
               {
-                value: "zombieJ",
-                label: "zombieJ",
+                value: "user2",
+                label: "user2",
               },
               {
-                value: "yesmeck",
-                label: "yesmeck",
+                value: "user3",
+                label: "user3",
               },
             ]}
           />
@@ -1408,39 +1408,39 @@ export default () => (
           <Mentions
             placeholder="this is readOnly Mentions"
             readOnly
-            defaultValue="afc163"
+            defaultValue="@user1"
             options={[
               {
-                value: "afc163",
-                label: "afc163",
+                value: "user1",
+                label: "user1",
               },
               {
-                value: "zombieJ",
-                label: "zombieJ",
+                value: "user2",
+                label: "user2",
               },
               {
-                value: "yesmeck",
-                label: "yesmeck",
+                value: "user3",
+                label: "user3",
               },
             ]}
           />
         </Variant>
         <Variant name="status">
           <Mentions
-            defaultValue="@afc163"
+            defaultValue="@user1"
             status="error"
             options={[
               {
-                value: "afc163",
-                label: "afc163",
+                value: "user1",
+                label: "user1",
               },
               {
-                value: "zombieJ",
-                label: "zombieJ",
+                value: "user2",
+                label: "user2",
               },
               {
-                value: "yesmeck",
-                label: "yesmeck",
+                value: "user3",
+                label: "user3",
               },
             ]}
           />
