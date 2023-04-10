@@ -4237,7 +4237,10 @@ export default () => (
           <FloatButton.BackTop />
         </Variant>
       </Component>
-      <Component name="Watermark">
+      <Component
+        name="Watermark"
+        docURL="https://ant.design/components/watermark"
+      >
         <Variant previewLayout="stretch">
           <Watermark content="Ant Design">
             <div style={{ height: 400 }} />
